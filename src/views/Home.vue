@@ -45,7 +45,11 @@ export default {
   },
   methods: {
     clickMe() {
-      this.$buefy.notification.open('Transferência iniciada')
+      this.$buefy.notification.open({
+        message:'Transferência iniciada com sucesso',
+        type: 'is-success',
+        position: 'is-top'
+        })
     }
   }
 };
